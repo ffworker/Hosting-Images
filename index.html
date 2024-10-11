@@ -1,1 +1,41 @@
-"href=images"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .image-gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="image-gallery">
+        <a href="images/image001.jpg" target="_blank"><img src="images/image001.jpg" alt="Image 1"></a>
+        <a href="images/image002.jpg" target="_blank"><img src="images/image002.jpg" alt="Image 2"></a>
+        <a href="images/image003.jpg" target="_blank"><img src="images/image003.jpg" alt="Image 3"></a>
+        <a href="images/xing.png" target="_blank"><img src="images/xing.png" alt="Xing"></a>
+        <a href="images/facebook.png" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="images/instagram.png" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+        <!-- Add more images as needed -->
+    </div>
+</body>
+</html>
